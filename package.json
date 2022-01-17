@@ -7,6 +7,7 @@
 	"publisher": "Smithed-MC",
     "icon": "icon.png",
     "homepage": "https://smithed.dev",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/Smithed-MC/DeveloperExtension"
