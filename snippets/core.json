@@ -7,5 +7,14 @@
 			"function #smithed:core/pub/technical/tools/log"
 		],
 		"description": "Send message to Smithed Log"
+	},
+	"core.damage": {
+		"scope": "mcfunction",
+		"prefix": "damage",
+		"body": [
+			"scoreboard players set @s smithed.damage ${1:1}",
+			"function #smithed:core/pub/entity/damage/apply"
+		],
+		"description": "Damage an entity by n"
 	}
 }
