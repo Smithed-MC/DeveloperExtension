@@ -1,0 +1,11 @@
+{
+    "core.log": {
+		"scope": "mcfunction",
+		"prefix": "log",
+		"body": [
+			"data merge storage smithed:log {message:'$1',level:1,type:'${2:INFO}'}",
+			"function #smithed:core/pub/technical/tools/log"
+		],
+		"description": "Send message to Smithed Log"
+	}
+}

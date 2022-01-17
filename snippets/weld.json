@@ -1,0 +1,29 @@
+{
+    "weld.smithed": {
+		"scope": "json",
+		"prefix": "smithed",
+		"body": [
+			"\"__smithed__\": {",
+			"  \"rules\":[",
+			"    $1",
+			"  ]",
+			"}"
+		],
+		"description": "Quick metadata"
+	},
+	"weld.rule": {
+		"scope": "json",
+		"prefix": "rule",
+		"body": [
+			"{",
+			"  \"type\": \"smithed:${1:append}\",",
+			"  \"target\": \"${2:pools}\",",
+			"  \"source\": {",
+			"    \"type\": \"smithed:${3:reference}\",",
+			"    \"${4:path}\": \"$5\"",
+			"  }",
+			"}"
+		],
+		"description": "Quick rule"
+	}
+}

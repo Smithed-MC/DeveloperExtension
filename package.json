@@ -1,0 +1,70 @@
+{
+	"name": "smithed-dev-ext",
+	"displayName": "Smithed Developer Extension",
+	"description": "Quality of life improvements for Smithed developers",
+	"version": "0.0.1",
+    "author": "Smithed-MC",
+	"publisher": "Smithed-MC",
+    "icon": "icon.png",
+    "homepage": "https://smithed.dev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Smithed-MC/DeveloperExtension"
+    },
+    "bugs": {
+        "url": "https://github.com/Smithed-MC/DeveloperExtension/issues"
+    },
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets",
+        "Other"
+	],
+    "keywords": [
+        "datapack",
+        "minecraft",
+        "mcfunction",
+        "smithed"
+    ],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "mcfunction",
+				"path": "./snippets/core.json"
+			},
+            {
+				"language": "json",
+                "fileMatch": [
+                    "data/*/advancements/*.json",
+                    "data/*/dimension/*.json",
+                    "data/*/dimension_type/*.json",
+                    "data/*/item_modifiers/*.json",
+                    "data/*/loot_tables/*.json",
+                    "data/*/predicates/*.json",
+                    "data/*/recipes/*.json",
+                    "data/*/worldgen/*.json",
+                    "data/minecraft/*.json"
+                ],
+				"path": "./snippets/weld.json"
+			}
+		],
+        "jsonValidation": [
+            {
+				"language": "json",
+                "fileMatch": [
+                    "data/*/advancements/*.json",
+                    "data/*/dimension/*.json",
+                    "data/*/dimension_type/*.json",
+                    "data/*/item_modifiers/*.json",
+                    "data/*/loot_tables/*.json",
+                    "data/*/predicates/*.json",
+                    "data/*/recipes/*.json",
+                    "data/*/worldgen/*.json",
+                    "data/minecraft/*.json"
+                ],
+				"url": "https://smithed.dev/files/weld-schema.json"
+			}
+        ]
+	}
+}
